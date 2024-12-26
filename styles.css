@@ -104,4 +104,42 @@ header button:hover {
 .movie-card button:hover {
     background-color: #e64a19;
 }
-
+@media screen and (max-width: 550px){
+    .movie-card {
+        background-color: rgba(255, 255, 255, 0.283);
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 1rem;
+        width: 120px;
+        overflow: hidden;
+        text-align: left;
+        &:hover{
+            transition: 0.5s;
+            height: 110%;
+            width: 125px;
+            position: inherit;
+            img{
+                width: 110%;
+            }
+        }
+        h3{
+            font-size: 13px;
+        }
+        button{
+            height: 30px;
+            font-size: 10px;
+        }
+    }
+    header input {
+        height: 37px;
+        width: 50%;
+        font-size: 12px;
+        border-radius: 10px;
+        padding-left: 25px;
+        margin-right: 0.5rem;
+        border: none;
+        margin-top: 10px;
+    }
+}
