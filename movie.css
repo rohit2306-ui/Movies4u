@@ -80,33 +80,34 @@ main{
         margin: auto;
     }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 550px) {
     main{
         #movieDetails{
-            margin: 50px 50px;
+            padding-left: 10px;
+            margin: 5px 5px;
             background-color: rgba(255, 255, 255, 0.212);
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             backdrop-filter: blur(20px);
             border-radius: 10px;
+            margin-bottom: 20px;
             img{
+                margin: auto;
                 display: flex;
-                
-                width: 300px;
-                margin: 50px 50px;
+                height: 200px;
                 border-radius: 10px;
             }
             div{
-                margin: 50px 50px;
+                margin: 5px 10px;
                 h2{
-                    font-size: 40px;
+                    font-size: 22px;
                     color: rgb(239, 225, 175);
                 }
                 p{
-                    font-size: 20px;
+                    font-size: 15px;
                 }
                 h1{
-                    font-size: 18px;
+                    font-size: 13px;
                 }
                 .main1{
                     background-color: rgba(24, 112, 194, 0.167);
@@ -132,11 +133,32 @@ main{
             }
         }
         iframe{
-            width: 90%;
+            width: 80%;
             display: flex;
             flex-wrap: nowrap;
             justify-content: center;
             margin: auto;
+        }
+    }
+    header{
+        padding: 5px;
+        background-color: rgba(255, 255, 255, 0.269);
+        border-radius: 10px;
+        backdrop-filter: blur(20px);
+        h1{
+            font-size: 25px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            color: white;
+            padding: 5px 0px;
+        }
+        img{
+            height: 40px;
+            display: flex;
+            position: relative;
+            border-radius: 10px;
+            margin: 5px 5px;
         }
     }
   }
