@@ -1,0 +1,142 @@
+body{
+    background: linear-gradient(60deg ,rgb(13, 13, 31), rgb(23, 23, 53) , black);
+    color: white;
+}
+header{
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.269);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    h1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        color: white;
+        padding: 10px 0px;
+    }
+    img{
+        height: 60px;
+        display: flex;
+        position: relative;
+        border-radius: 10px;
+        margin: 5px 5px;
+    }
+}
+main{
+    #movieDetails{
+        margin: 50px 50px;
+        background-color: rgba(255, 255, 255, 0.212);
+        display: flex;
+        flex-wrap: nowrap;
+        backdrop-filter: blur(20px);
+        border-radius: 10px;
+        img{
+            display: flex;
+            
+            width: 300px;
+            margin: 50px 50px;
+            border-radius: 10px;
+        }
+        div{
+            margin: 50px 50px;
+            h2{
+                font-size: 40px;
+                color: rgb(239, 225, 175);
+            }
+            p{
+                font-size: 20px;
+            }
+            h1{
+                font-size: 18px;
+            }
+            .main1{
+                background-color: rgba(24, 112, 194, 0.167);
+                color: white;
+                padding: 5px 5px;
+                border-radius: 10px;
+                backdrop-filter: blur(20px);
+            }
+            button{
+                height: 50px;
+                background-color: rgba(0, 0, 0, 0.543);
+                color: grey;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                font-size: 17px;
+                border-radius: 10px;
+                border: 1px solid white;
+                cursor: pointer;
+            }
+            
+        }
+    }
+    iframe{
+        width: 50%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 992px) {
+    main{
+        #movieDetails{
+            margin: 50px 50px;
+            background-color: rgba(255, 255, 255, 0.212);
+            display: flex;
+            flex-wrap: wrap;
+            backdrop-filter: blur(20px);
+            border-radius: 10px;
+            img{
+                display: flex;
+                
+                width: 300px;
+                margin: 50px 50px;
+                border-radius: 10px;
+            }
+            div{
+                margin: 50px 50px;
+                h2{
+                    font-size: 40px;
+                    color: rgb(239, 225, 175);
+                }
+                p{
+                    font-size: 20px;
+                }
+                h1{
+                    font-size: 18px;
+                }
+                .main1{
+                    background-color: rgba(24, 112, 194, 0.167);
+                    color: white;
+                    padding: 5px 5px;
+                    border-radius: 10px;
+                    backdrop-filter: blur(20px);
+                }
+                button{
+                    height: 50px;
+                    background-color: rgba(0, 0, 0, 0.543);
+                    color: grey;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    font-size: 17px;
+                    border-radius: 10px;
+                    border: 1px solid white;
+                    cursor: pointer;
+                }
+                
+            }
+        }
+        iframe{
+            width: 90%;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            margin: auto;
+        }
+    }
+  }
