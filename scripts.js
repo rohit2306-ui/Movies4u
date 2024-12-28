@@ -65,13 +65,10 @@ function getMovieDetails() {
             const movieDetails = document.getElementById('movieDetails');
             const trailer = movie.videos.results.find(video => video.type === 'Trailer');
             movieDetails.innerHTML = `
-                <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.title}">
-                <div><h2>${movie.title}</h2>
-                <div class="main1"><p>${movie.overview}</p></div>
-                <h1><strong>Release Date:</strong> ${movie.release_date}
+                <h2>${movie.title}</h2>
+                <p>${movie.overview}</p>
+                <p><strong>Release Date:</strong> ${movie.release_date}</p>
                 <p><strong>Rating:</strong> ${movie.vote_average}</p>
-                <button>Watch ${movie.title}</button>
-                </div>
             `;
             if (trailer) {
                 const trailerFrame = document.getElementById('trailerFrame');
